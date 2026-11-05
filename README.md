@@ -66,6 +66,18 @@ python3 tools/costruisci_app.py      # copia i file in docs/, ricrea ZIP, catalo
 
 Le voci mostrate nell'app stanno in `CATALOGO` dentro `tools/costruisci_app.py`: aggiungine una lì quando crei una nuova variante. Le icone dell'app si rifanno con `node tools/icone_app.js`.
 
+## Sincronizzare con DomePodcast-Studio
+
+I loghi vivono in due posti: qui (originali, usati dalla PWA) e in `DomePodcast-Studio/brand/` (copia). Per tenerli uguali:
+
+```bash
+python3 tools/sincronizza_brand.py --prova    # mostra cosa cambierebbe, senza toccare nulla
+python3 tools/sincronizza_brand.py --git      # copia da qui a DomePodcast-Studio e fa commit + push su main
+python3 tools/sincronizza_brand.py --inverso  # se hai modificato la copia: da DomePodcast-Studio a qui
+```
+
+Sincronizza `logo/`, `archivio/`, `brand.json` e gli script `genera_logo.py` / `renderizza_png.js`, in modo esatto (rimuove anche i file cancellati). Non tocca i `README.md`/`CLAUDE.md` né la PWA. DomePodcast-Studio viene cercato accanto a questo repo (`../domepodcast-studio`) o nella variabile `DOMEPODCAST_STUDIO`; se manca viene clonato.
+
 ## Come rigenerare i file
 
 Tutti gli SVG nascono da un unico script, così le varianti restano coerenti:

@@ -1,6 +1,6 @@
 # Istruzioni per Claude Code
 
-Nota: una **copia** dei loghi è anche nel repo `olivieridomenicopodcast/DomePodcast-Studio` (cartella `brand/`). Qui restano i file originali, necessari alla PWA in `docs/`. Se modifichi i loghi qui, aggiorna anche la copia lì (e viceversa).
+Nota: una **copia** dei loghi è anche nel repo `olivieridomenicopodcast/DomePodcast-Studio` (cartella `brand/`). Qui restano i file originali, necessari alla PWA in `docs/`. Dopo OGNI modifica ai loghi esegui `python3 tools/sincronizza_brand.py --git` (dalla radice di questo repo): copia tutto in DomePodcast-Studio e fa commit e push. Se hai modificato la copia di là, usa `--inverso` prima. Vedi il `README.md`.
 
 Questo repo contiene i loghi di **Olivieri Domenico** (Niky), podcast coach, editor e sound designer. Rispondi in italiano.
 
