@@ -27,4 +27,6 @@ Questo repo contiene i loghi di **Olivieri Domenico** (Niky), podcast coach, edi
 
 ## Git
 
-- Sviluppa sul branch indicato nella sessione; non aprire pull request se non richiesto.
+- Niky ha detto di fare **sempre in autonomia** commit, push e merge in `main`, senza chiedere conferma ogni volta.
+- Dopo ogni modifica: commit con messaggio chiaro, push sul branch di lavoro e merge in `main` (che è il ramo da cui parte la PWA con GitHub Pages).
+- Non aprire pull request se non richiesto: porta le modifiche in `main` con un merge/push diretto.
