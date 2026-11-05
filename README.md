@@ -52,6 +52,8 @@ Ogni file esiste in **SVG** (vettoriale, da preferire) e **PNG** (sfondo traspar
 
 In [`docs/`](docs/) c'è una piccola web app installabile (PWA) per scaricare i loghi dal telefono quando serve: ogni file in **PNG o SVG, uno per uno**, oppure **tutto il set in un unico ZIP**. Funziona anche offline dopo la prima apertura.
 
+**Come è pubblicata**: alla radice del repo c'è un `index.html` che porta subito all'app in `docs/`, quindi funziona sia con Pages su *root* sia su */docs*. (Indirizzo: `https://olivieridomenicopodcast.github.io/Crea-loghi/`.)
+
 **Pubblicarla (una volta sola)**, con GitHub Pages: *Settings → Pages → Build and deployment → Deploy from a branch → branch `main` (dopo il merge), cartella `/docs`*. L'indirizzo sarà `https://<utente>.github.io/Crea-loghi/`. Aprilo dal telefono e usa "Installa" (Android/Chrome) oppure Condividi → "Aggiungi alla schermata Home" (iPhone).
 
 > Nota: GitHub Pages su un repo privato richiede un piano a pagamento; con un repo pubblico è gratuito.
