@@ -48,6 +48,24 @@ Ogni file esiste in **SVG** (vettoriale, da preferire) e **PNG** (sfondo traspar
 4. Colori, font e geometria sono in [`brand.json`](brand.json).
 5. Lascia attorno al logo uno spazio libero di almeno la metà dello spessore della D.
 
+## App per scaricare i loghi (PWA)
+
+In [`docs/`](docs/) c'è una piccola web app installabile (PWA) per scaricare i loghi dal telefono quando serve: ogni file in **PNG o SVG, uno per uno**, oppure **tutto il set in un unico ZIP**. Funziona anche offline dopo la prima apertura.
+
+**Pubblicarla (una volta sola)**, con GitHub Pages: *Settings → Pages → Build and deployment → Deploy from a branch → branch `main` (dopo il merge), cartella `/docs`*. L'indirizzo sarà `https://<utente>.github.io/Crea-loghi/`. Aprilo dal telefono e usa "Installa" (Android/Chrome) oppure Condividi → "Aggiungi alla schermata Home" (iPhone).
+
+> Nota: GitHub Pages su un repo privato richiede un piano a pagamento; con un repo pubblico è gratuito.
+
+**Aggiornarla** dopo aver cambiato i loghi (non modificare a mano `docs/file`, `docs/sw.js`, `docs/catalogo.json` né lo ZIP):
+
+```bash
+python3 tools/genera_logo.py
+NODE_PATH=$(npm root -g) node tools/renderizza_png.js
+python3 tools/costruisci_app.py      # copia i file in docs/, ricrea ZIP, catalogo e service worker
+```
+
+Le voci mostrate nell'app stanno in `CATALOGO` dentro `tools/costruisci_app.py`: aggiungine una lì quando crei una nuova variante. Le icone dell'app si rifanno con `node tools/icone_app.js`.
+
 ## Come rigenerare i file
 
 Tutti gli SVG nascono da un unico script, così le varianti restano coerenti:
@@ -67,7 +85,8 @@ logo/ufficiale/   logo ufficiale (icona + lockup orizzontale)
 logo/varianti/    varianti ufficiali (colori e monocolore)
 logo/banner/      banner LinkedIn (1584x396)
 logo/anteprime/   immagini riassuntive
-tools/            script che generano i file
+docs/             app web (PWA) per scaricare i loghi, pubblicabile con GitHub Pages
+tools/            script che generano loghi, icone e app
 archivio/         prove scartate: NON usare
 brand.json        colori, font, geometria
 CLAUDE.md         istruzioni per Claude Code

@@ -7,6 +7,7 @@ Questo repo contiene i loghi di **Olivieri Domenico** (Niky), podcast coach, edi
 - **Logo ufficiale** = `logo/ufficiale/logo-ufficiale.svg` (icona quadrata, monogramma DO bianco su sfumatura indaco, due onde che escono dalla O) e il suo lockup `logo/ufficiale/logo-ufficiale-orizzontale.svg`.
 - **Varianti ufficiali** = tutto quello in `logo/varianti/` (nero, arancione bianco/viola, marchi senza sfondo, monocolore). Sono lo stesso logo in altri colori.
 - `logo/banner/` contiene i banner LinkedIn (1584×396), generati da `tools/genera_logo.py` (`banner_linkedin`). Nuovi banner o formati social: aggiungi una funzione lì, tieni il contenuto lontano dall'angolo in basso a sinistra (foto profilo).
+- `docs/` è una **PWA** per scaricare i loghi (uno per uno o tutto in ZIP), pubblicata con GitHub Pages. È generata: dopo ogni modifica ai loghi esegui `python3 tools/costruisci_app.py` e fai commit di `docs/`. Non editare a mano `docs/file`, `docs/sw.js`, `docs/catalogo.json`, lo ZIP. L'interfaccia sta in `docs/index.html`, `stile.css`, `app.js` (modificabili).
 - `archivio/` contiene prove scartate (incluso il vecchio logo con la "P"): **non usarle e non ripristinarle**.
 
 ## Quando ti chiedono di usare il logo

@@ -1,0 +1,160 @@
+{
+ "gruppi": [
+  {
+   "gruppo": "Logo ufficiale",
+   "descrizione": "Il logo da usare di default.",
+   "voci": [
+    {
+     "titolo": "Icona ufficiale",
+     "nota": "Quadrata 1024×1024. Foto profilo, app, cover",
+     "sfondo": "chiaro",
+     "nome": "logo-ufficiale",
+     "png": "file/ufficiale/logo-ufficiale.png",
+     "svg": "file/ufficiale/logo-ufficiale.svg"
+    },
+    {
+     "titolo": "Logo orizzontale ufficiale",
+     "nota": "Con nome e descrizione. Banner, firme email, sito",
+     "sfondo": "chiaro",
+     "nome": "logo-ufficiale-orizzontale",
+     "png": "file/ufficiale/logo-ufficiale-orizzontale.png",
+     "svg": "file/ufficiale/logo-ufficiale-orizzontale.svg"
+    }
+   ]
+  },
+  {
+   "gruppo": "Banner LinkedIn",
+   "descrizione": "Formato 1584×396, PNG a doppia risoluzione.",
+   "voci": [
+    {
+     "titolo": "Banner chiaro",
+     "nota": "Sfondo bianco, versione di riferimento",
+     "sfondo": "chiaro",
+     "nome": "banner-linkedin-chiaro",
+     "png": "file/banner/banner-linkedin-chiaro.png",
+     "svg": "file/banner/banner-linkedin-chiaro.svg"
+    },
+    {
+     "titolo": "Banner indaco",
+     "nota": "Sfondo viola a tutta larghezza",
+     "sfondo": "chiaro",
+     "nome": "banner-linkedin-indaco",
+     "png": "file/banner/banner-linkedin-indaco.png",
+     "svg": "file/banner/banner-linkedin-indaco.svg"
+    }
+   ]
+  },
+  {
+   "gruppo": "Varianti ufficiali",
+   "descrizione": "Stesso logo in altri colori, per fondi e stampe diverse.",
+   "voci": [
+    {
+     "titolo": "Icona nera",
+     "nota": "Quadrata, lettere bianche",
+     "sfondo": "chiaro",
+     "nome": "icona-nero",
+     "png": "file/varianti/icona-nero.png",
+     "svg": "file/varianti/icona-nero.svg"
+    },
+    {
+     "titolo": "Icona arancione, lettere bianche",
+     "nota": "Quadrata",
+     "sfondo": "chiaro",
+     "nome": "icona-arancione-bianco",
+     "png": "file/varianti/icona-arancione-bianco.png",
+     "svg": "file/varianti/icona-arancione-bianco.svg"
+    },
+    {
+     "titolo": "Icona arancione, lettere viola",
+     "nota": "Quadrata",
+     "sfondo": "chiaro",
+     "nome": "icona-arancione-viola",
+     "png": "file/varianti/icona-arancione-viola.png",
+     "svg": "file/varianti/icona-arancione-viola.svg"
+    },
+    {
+     "titolo": "Orizzontale nero",
+     "nota": "Con nome e descrizione",
+     "sfondo": "chiaro",
+     "nome": "logo-banner-nero",
+     "png": "file/varianti/logo-banner-nero.png",
+     "svg": "file/varianti/logo-banner-nero.svg"
+    },
+    {
+     "titolo": "Orizzontale arancione, testo bianco",
+     "nota": "Con nome e descrizione",
+     "sfondo": "chiaro",
+     "nome": "logo-banner-arancione-bianco",
+     "png": "file/varianti/logo-banner-arancione-bianco.png",
+     "svg": "file/varianti/logo-banner-arancione-bianco.svg"
+    },
+    {
+     "titolo": "Orizzontale arancione, testo viola",
+     "nota": "Con nome e descrizione",
+     "sfondo": "chiaro",
+     "nome": "logo-banner-arancione-viola",
+     "png": "file/varianti/logo-banner-arancione-viola.png",
+     "svg": "file/varianti/logo-banner-arancione-viola.svg"
+    },
+    {
+     "titolo": "Orizzontale a colori, senza sfondo",
+     "nota": "Per fondi chiari",
+     "sfondo": "chiaro",
+     "nome": "logo-colore",
+     "png": "file/varianti/logo-colore.png",
+     "svg": "file/varianti/logo-colore.svg"
+    },
+    {
+     "titolo": "Orizzontale nero, senza sfondo",
+     "nota": "Monocolore, per stampe",
+     "sfondo": "chiaro",
+     "nome": "logo-nero",
+     "png": "file/varianti/logo-nero.png",
+     "svg": "file/varianti/logo-nero.svg"
+    },
+    {
+     "titolo": "Orizzontale arancione, senza sfondo",
+     "nota": "Monocolore",
+     "sfondo": "chiaro",
+     "nome": "logo-arancione",
+     "png": "file/varianti/logo-arancione.png",
+     "svg": "file/varianti/logo-arancione.svg"
+    },
+    {
+     "titolo": "Marchio a colori",
+     "nota": "Solo DO e onde, senza sfondo",
+     "sfondo": "chiaro",
+     "nome": "marchio-colore",
+     "png": "file/varianti/marchio-colore.png",
+     "svg": "file/varianti/marchio-colore.svg"
+    },
+    {
+     "titolo": "Marchio nero",
+     "nota": "Monocolore, per timbri e ricami",
+     "sfondo": "chiaro",
+     "nome": "marchio-nero-mono",
+     "png": "file/varianti/marchio-nero-mono.png",
+     "svg": "file/varianti/marchio-nero-mono.svg"
+    },
+    {
+     "titolo": "Marchio arancione",
+     "nota": "Monocolore",
+     "sfondo": "chiaro",
+     "nome": "marchio-arancione-mono",
+     "png": "file/varianti/marchio-arancione-mono.png",
+     "svg": "file/varianti/marchio-arancione-mono.svg"
+    },
+    {
+     "titolo": "Marchio bianco",
+     "nota": "Per fondi scuri o foto",
+     "sfondo": "scuro",
+     "nome": "marchio-bianco-mono",
+     "png": "file/varianti/marchio-bianco-mono.png",
+     "svg": "file/varianti/marchio-bianco-mono.svg"
+    }
+   ]
+  }
+ ],
+ "zip": "logo-olivieri-domenico.zip",
+ "zip_mb": 1.6
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Logo Olivieri Domenico",
+  "short_name": "Logo DO",
+  "description": "Scarica il logo ufficiale, le varianti e i banner di Olivieri Domenico",
+  "lang": "it",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0E1020",
+  "theme_color": "#2A1FA6",
+  "icons": [
+    {"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ]
+}
