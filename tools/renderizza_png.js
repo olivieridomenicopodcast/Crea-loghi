@@ -10,6 +10,10 @@ for(const d of dirs){for(const f of fs.readdirSync(d).filter(f=>f.endsWith('.svg
  const q=await b.newPage({viewport:{width:W,height:H}});
  await q.setContent(`<body style="margin:0"><img src="data:image/svg+xml;base64,${Buffer.from(s).toString('base64')}" style="width:${W}px;display:block">`);
  await q.screenshot({path:d+f.replace('.svg','.png'),omitBackground:true});await q.close();}}
+const bd=path.join(root,'banner')+path.sep;
+for(const f of fs.readdirSync(bd).filter(f=>f.endsWith('.svg'))){const s=fs.readFileSync(bd+f,'utf8');
+ const q=await b.newPage({viewport:{width:3168,height:792}});await q.setContent(`<body style="margin:0"><img src="data:image/svg+xml;base64,${Buffer.from(s).toString('base64')}" style="width:3168px;display:block">`);
+ await q.screenshot({path:bd+f.replace('.svg','.png')});await q.close();}
 fs.mkdirSync(path.join(root,'anteprime'),{recursive:true});
 const v=dirs[1],u=dirs[0];const all=[...fs.readdirSync(u).filter(f=>f.endsWith('.svg')).map(f=>u+f),...fs.readdirSync(v).filter(f=>f.endsWith('.svg')).map(f=>v+f)];
 const cell=p=>`<div style="background:${p.includes('bianco-mono')?'#14162a':'#fff'};border:1px solid #e5e5e5;display:flex;align-items:center;justify-content:center;padding:14px"><img src="data:image/svg+xml;base64,${fs.readFileSync(p).toString('base64')}" style="max-width:100%;max-height:190px"></div>`;

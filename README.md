@@ -27,6 +27,15 @@ Tutte le altre versioni in [`logo/varianti/`](logo/varianti/) sono **varianti uf
 | Monocolore arancione | `marchio-arancione-mono`, `logo-arancione` | Stampe a un colore su fondo chiaro |
 | Monocolore bianco | `marchio-bianco-mono` | Su fondi scuri o foto (il PNG è trasparente: su sfondo bianco sembra vuoto) |
 
+## Banner LinkedIn
+
+In [`logo/banner/`](logo/banner/), formato LinkedIn **1584×396** (i PNG sono a doppia risoluzione, 3168×792, per restare nitidi):
+
+- `banner-linkedin-chiaro`: sfondo bianco con icona ufficiale + nome e descrizione (la versione di riferimento).
+- `banner-linkedin-indaco`: sfondo indaco a tutta larghezza con marchio e testo bianchi.
+
+Il contenuto è centrato: su LinkedIn la foto profilo copre in basso a sinistra, quindi non mettere nulla in quella zona.
+
 Anteprima di tutto: [`logo/anteprime/`](logo/anteprime/).
 
 Ogni file esiste in **SVG** (vettoriale, da preferire) e **PNG** (sfondo trasparente).
@@ -56,6 +65,7 @@ Per aggiungere una variante basta definire un nuovo tema in `THEMES` dentro `too
 ```
 logo/ufficiale/   logo ufficiale (icona + lockup orizzontale)
 logo/varianti/    varianti ufficiali (colori e monocolore)
+logo/banner/      banner LinkedIn (1584x396)
 logo/anteprime/   immagini riassuntive
 tools/            script che generano i file
 archivio/         prove scartate: NON usare

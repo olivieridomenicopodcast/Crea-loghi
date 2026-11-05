@@ -80,3 +80,36 @@ for k in ["indaco","nero","arancione-bianco","arancione-viola"]: lockup(k,f"logo
 for a,b in [("icona-indaco","logo-ufficiale"),("logo-banner-indaco","logo-ufficiale-orizzontale")]:
     os.replace(OUT+a+".svg",UFF+b+".svg")
     if os.path.exists(OUT+a+".png"): os.remove(OUT+a+".png")
+
+# ---- Banner LinkedIn (1584x396; la foto profilo copre in basso a sinistra, quindi il contenuto sta al centro) ----
+BAN=ROOT+"/logo/banner/"; os.makedirs(BAN,exist_ok=True)
+def banner_linkedin(name,dark):
+    W,H=1584,396
+    if not dark:   # bianco, come il primo logo: icona ufficiale + nome
+        t=THEMES["indaco"];d,b=mark(t,"b");bd,fill=bgdef(t,"b");S=190;gap=46
+        nsz,dsz=58,19.5;tcol,scol=INK,"#4A4F6B"
+        n,wn=text_path("OLIVIERI DOMENICO","Inter-SemiBold.otf",nsz,0,0,0.09);_,wd=text_path("PODCAST COACH  ·  EDITOR  ·  SOUND DESIGNER","Inter-Medium.otf",dsz,0,0,0.2)
+        total=S+gap+max(wn,wd);x0=(W-total)/2;tx=x0+S+gap;cy=H/2
+        capn=nsz*.727;capd=dsz*.727;g=22;top=cy-(capn+g+capd)/2
+        p1,_=text_path("OLIVIERI DOMENICO","Inter-SemiBold.otf",nsz,tx,top+capn,0.09)
+        p2,_=text_path("PODCAST COACH  ·  EDITOR  ·  SOUND DESIGNER","Inter-Medium.otf",dsz,tx+2,top+capn+g+capd,0.2)
+        body=(f'<rect width="{W}" height="{H}" fill="#FFFFFF"/>'
+              f'<g transform="translate({x0:.1f} {cy-S/2:.1f}) scale({S/200})"><rect width="200" height="200" rx="46" fill="{fill}"/><g transform="translate(92 100) scale(.8) translate(-114 -100)">{b}</g></g>'
+              f'<path d="{p1}" fill="{tcol}"/><path d="{p2}" fill="{scol}"/>')
+        defs=d+bd
+    else:          # indaco a tutta larghezza: marchio senza quadrato + nome in bianco
+        t=THEMES["indaco"];d,b=mark(t,"b");bd,_=bgdef(t,"b");k=1.45;mw=173*k;gap=56
+        nsz,dsz=58,19.5
+        _,wn=text_path("OLIVIERI DOMENICO","Inter-SemiBold.otf",nsz,0,0,0.09);_,wd=text_path("PODCAST COACH  ·  EDITOR  ·  SOUND DESIGNER","Inter-Medium.otf",dsz,0,0,0.2)
+        total=mw+gap+max(wn,wd);x0=(W-total)/2;tx=x0+mw+gap;cy=H/2
+        capn=nsz*.727;capd=dsz*.727;g=22;top=cy-(capn+g+capd)/2
+        p1,_=text_path("OLIVIERI DOMENICO","Inter-SemiBold.otf",nsz,tx,top+capn,0.09)
+        p2,_=text_path("PODCAST COACH  ·  EDITOR  ·  SOUND DESIGNER","Inter-Medium.otf",dsz,tx+2,top+capn+g+capd,0.2)
+        grad='<linearGradient id="bb" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2A1FA6"/><stop offset="1" stop-color="#5B45F2"/></linearGradient>'
+        body=(f'<rect width="{W}" height="{H}" fill="url(#bb)"/>'
+              f'<g transform="translate({x0-44*k:.1f} {cy-100*k:.1f}) scale({k})">{b}</g>'
+              f'<path d="{p1}" fill="#FFFFFF"/><path d="{p2}" fill="#D9D3FF"/>')
+        defs=d+grad
+    open(BAN+name+".svg","w").write(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}"><defs>{defs}</defs>{body}</svg>')
+banner_linkedin("banner-linkedin-chiaro",False)
+banner_linkedin("banner-linkedin-indaco",True)
