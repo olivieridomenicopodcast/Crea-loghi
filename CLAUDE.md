@@ -1,6 +1,5 @@
 # Istruzioni per Claude Code
 
-Nota: una **copia** dei loghi è anche nel repo `olivieridomenicopodcast/DomePodcast-Studio` (cartella `brand/`). Qui restano i file originali, necessari alla PWA in `docs/`. Dopo OGNI modifica ai loghi esegui `python3 tools/sincronizza_brand.py --git` (dalla radice di questo repo): copia tutto in DomePodcast-Studio e fa commit e push. Se hai modificato la copia di là, usa `--inverso` prima. Vedi il `README.md`.
 
 Questo repo contiene i loghi di **Olivieri Domenico** (Niky), podcast coach, editor e sound designer. Rispondi in italiano.
 
@@ -10,6 +9,7 @@ Questo repo contiene i loghi di **Olivieri Domenico** (Niky), podcast coach, edi
 - **Varianti ufficiali** = tutto quello in `logo/varianti/` (nero, arancione bianco/viola, marchi senza sfondo, monocolore). Sono lo stesso logo in altri colori.
 - `logo/banner/` contiene i banner LinkedIn (1584×396), generati da `tools/genera_logo.py` (`banner_linkedin`). Nuovi banner o formati social: aggiungi una funzione lì, tieni il contenuto lontano dall'angolo in basso a sinistra (foto profilo).
 - `docs/` è una **PWA** per scaricare i loghi (uno per uno o tutto in ZIP), pubblicata con GitHub Pages. È generata: dopo ogni modifica ai loghi esegui `python3 tools/costruisci_app.py` e fai commit di `docs/`. Non editare a mano `docs/file`, `docs/sw.js`, `docs/catalogo.json`, lo ZIP. L'interfaccia sta in `docs/index.html`, `stile.css`, `app.js` (modificabili).
+- `stili-e-template/` contiene esempi di post/caroselli Instagram con il loro stile (vedi il suo `README.md`). Per nuovi post parti da lì.
 - `archivio/` contiene prove scartate (incluso il vecchio logo con la "P"): **non usarle e non ripristinarle**.
 
 ## Quando ti chiedono di usare il logo
