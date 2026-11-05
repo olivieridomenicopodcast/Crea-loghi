@@ -1,20 +1,37 @@
 {
  "gruppi": [
   {
-   "gruppo": "Logo ufficiale",
-   "descrizione": "Il logo da usare di default.",
+   "gruppo": "Principali",
+   "descrizione": "",
+   "comprimibile": false,
    "voci": [
     {
-     "titolo": "Icona ufficiale",
-     "nota": "Quadrata 1024×1024. Foto profilo, app, cover",
+     "titolo": "Banner LinkedIn, chiaro",
+     "nota": "1584×396, sfondo bianco (consigliato)",
+     "sfondo": "chiaro",
+     "nome": "banner-linkedin-chiaro",
+     "png": "file/banner/banner-linkedin-chiaro.png",
+     "svg": "file/banner/banner-linkedin-chiaro.svg"
+    },
+    {
+     "titolo": "Banner LinkedIn, indaco",
+     "nota": "1584×396, sfondo viola",
+     "sfondo": "chiaro",
+     "nome": "banner-linkedin-indaco",
+     "png": "file/banner/banner-linkedin-indaco.png",
+     "svg": "file/banner/banner-linkedin-indaco.svg"
+    },
+    {
+     "titolo": "Logo ufficiale",
+     "nota": "Icona 1024×1024, per foto profilo",
      "sfondo": "chiaro",
      "nome": "logo-ufficiale",
      "png": "file/ufficiale/logo-ufficiale.png",
      "svg": "file/ufficiale/logo-ufficiale.svg"
     },
     {
-     "titolo": "Logo orizzontale ufficiale",
-     "nota": "Con nome e descrizione. Banner, firme email, sito",
+     "titolo": "Logo ufficiale orizzontale",
+     "nota": "Con nome e descrizione",
      "sfondo": "chiaro",
      "nome": "logo-ufficiale-orizzontale",
      "png": "file/ufficiale/logo-ufficiale-orizzontale.png",
@@ -23,30 +40,9 @@
    ]
   },
   {
-   "gruppo": "Banner LinkedIn",
-   "descrizione": "Formato 1584×396, PNG a doppia risoluzione.",
-   "voci": [
-    {
-     "titolo": "Banner chiaro",
-     "nota": "Sfondo bianco, versione di riferimento",
-     "sfondo": "chiaro",
-     "nome": "banner-linkedin-chiaro",
-     "png": "file/banner/banner-linkedin-chiaro.png",
-     "svg": "file/banner/banner-linkedin-chiaro.svg"
-    },
-    {
-     "titolo": "Banner indaco",
-     "nota": "Sfondo viola a tutta larghezza",
-     "sfondo": "chiaro",
-     "nome": "banner-linkedin-indaco",
-     "png": "file/banner/banner-linkedin-indaco.png",
-     "svg": "file/banner/banner-linkedin-indaco.svg"
-    }
-   ]
-  },
-  {
-   "gruppo": "Varianti ufficiali",
+   "gruppo": "Altre varianti",
    "descrizione": "Stesso logo in altri colori, per fondi e stampe diverse.",
+   "comprimibile": true,
    "voci": [
     {
      "titolo": "Icona nera",
